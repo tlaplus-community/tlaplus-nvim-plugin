@@ -1,3 +1,9 @@
+if exists('g:loaded_tlaplus_nvim')
+  finish
+endif
+
+let g:loaded_tlaplus_nvim = 1
+
 function! Tlaplus_unicode()
   set iskeyword+=\
   set iskeyword+=>
