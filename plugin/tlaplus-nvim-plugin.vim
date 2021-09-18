@@ -10,100 +10,100 @@ function! Tlaplus_unicode()
   set iskeyword+=<
   set iskeyword+==
   set iskeyword+=.
-  inorea == ≜
-  inorea \in ∈
-  inorea <- ←
-  inorea \A ∀
-  inorea \forall ∀
-  inorea \E ∃
-  inorea \exists ∃
-  inorea \|-> ↦
-  inorea -> →
-  inorea << ⟨
-  inorea >> ⟩
-  inorea >>_ ⟩_
-  inorea [] □
-  inorea :: ∷
-  inorea ~ ¬
-  inorea \lnot ¬
-  inorea \neg ¬
-  inorea => ⇒
-  inorea -+-> ⇸
-  inorea \equiv ≡
-  inorea <=> ⇔
-  inorea ~> ↝
-  inorea /\ ∧
-  inorea \land ∧
-  inorea \/ ∨
-  inorea \lor ∨
-  inorea := ≔
-  inorea ::= ⩴
-  inorea /= ≠
-  inorea # ≠
-  inorea <= ≤
-  inorea =< ≤
-  inorea \leq ≤
-  inorea >= ≥
-  inorea \geq ≥
-  inorea \approx ≈
-  inorea \|- ⊢
-  inorea \|= ⊨
-  inorea -\| ⊣
-  inorea =\| ⫤
-  inorea \asymp ≍
-  inorea \cong ≅
-  inorea \doteq ≐
-  inorea \gg ≫
-  inorea \ll ≪
-  inorea \notin ∉
-  inorea \prec ≺
-  inorea \succ ≻
-  inorea \preceq ⪯
-  inorea \succeq ⪰
-  inorea \propto ∝
-  inorea \sim ∼
-  inorea \simeq ≃
-  inorea \sqsubset ⊏
-  inorea \sqsupset ⊐
-  inorea \sqsubseteq ⊑
-  inorea \sqsupseteq ⊒
-  inorea \subset ⊂
-  inorea \supset ⊃
-  inorea \subseteq ⊆
-  inorea \supseteq ⊇
-  inorea \intersect ∩
-  inorea \cap ∩
-  inorea \union ∪
-  inorea \cup ∪
-  inorea .. ‥
-  inorea ... …
-  inorea (+) ⊕
-  inorea \oplus ⊕
-  inorea (-) ⊖
-  inorea \ominus ⊖
-  inorea \|\| ‖
-  inorea (.) ⊙
-  inorea \odot ⊙
-  inorea (/) ⊘
-  inorea \oslash ⊘
-  inorea (\X) ⊗
-  inorea \otimes ⊗
-  inorea \bigcirc ◯
-  inorea \bullet ●
-  inorea \div ÷
-  inorea \o ∘
-  inorea \circ ∘
-  inorea \star ⋆
-  inorea !! ‼
-  inorea ?? ⁇
-  inorea \sqcap ⊓
-  inorea \sqcup ⊔
-  inorea \uplus ⊎
-  inorea \X ×
-  inorea \times ×
-  inorea \wr ≀
-  inorea \cdot ⋅
-  inorea ^+ ⁺
+  inorea <buffer> == ≜
+  inorea <buffer> \in ∈
+  inorea <buffer> <- ←
+  inorea <buffer> \A ∀
+  inorea <buffer> \forall ∀
+  inorea <buffer> \E ∃
+  inorea <buffer> \exists ∃
+  inorea <buffer> \|-> ↦
+  inorea <buffer> -> →
+  inorea <buffer> << ⟨
+  inorea <buffer> >> ⟩
+  inorea <buffer> >>_ ⟩_
+  inorea <buffer> [] □
+  inorea <buffer> :: ∷
+  inorea <buffer> ~ ¬
+  inorea <buffer> \lnot ¬
+  inorea <buffer> \neg ¬
+  inorea <buffer> => ⇒
+  inorea <buffer> -+-> ⇸
+  inorea <buffer> \equiv ≡
+  inorea <buffer> <=> ⇔
+  inorea <buffer> ~> ↝
+  inorea <buffer> /\ ∧
+  inorea <buffer> \land ∧
+  inorea <buffer> \/ ∨
+  inorea <buffer> \lor ∨
+  inorea <buffer> := ≔
+  inorea <buffer> ::= ⩴
+  inorea <buffer> /= ≠
+  inorea <buffer> # ≠
+  inorea <buffer> <= ≤
+  inorea <buffer> =< ≤
+  inorea <buffer> \leq ≤
+  inorea <buffer> >= ≥
+  inorea <buffer> \geq ≥
+  inorea <buffer> \approx ≈
+  inorea <buffer> \|- ⊢
+  inorea <buffer> \|= ⊨
+  inorea <buffer> -\| ⊣
+  inorea <buffer> =\| ⫤
+  inorea <buffer> \asymp ≍
+  inorea <buffer> \cong ≅
+  inorea <buffer> \doteq ≐
+  inorea <buffer> \gg ≫
+  inorea <buffer> \ll ≪
+  inorea <buffer> \notin ∉
+  inorea <buffer> \prec ≺
+  inorea <buffer> \succ ≻
+  inorea <buffer> \preceq ⪯
+  inorea <buffer> \succeq ⪰
+  inorea <buffer> \propto ∝
+  inorea <buffer> \sim ∼
+  inorea <buffer> \simeq ≃
+  inorea <buffer> \sqsubset ⊏
+  inorea <buffer> \sqsupset ⊐
+  inorea <buffer> \sqsubseteq ⊑
+  inorea <buffer> \sqsupseteq ⊒
+  inorea <buffer> \subset ⊂
+  inorea <buffer> \supset ⊃
+  inorea <buffer> \subseteq ⊆
+  inorea <buffer> \supseteq ⊇
+  inorea <buffer> \intersect ∩
+  inorea <buffer> \cap ∩
+  inorea <buffer> \union ∪
+  inorea <buffer> \cup ∪
+  inorea <buffer> .. ‥
+  inorea <buffer> ... …
+  inorea <buffer> (+) ⊕
+  inorea <buffer> \oplus ⊕
+  inorea <buffer> (-) ⊖
+  inorea <buffer> \ominus ⊖
+  inorea <buffer> \|\| ‖
+  inorea <buffer> (.) ⊙
+  inorea <buffer> \odot ⊙
+  inorea <buffer> (/) ⊘
+  inorea <buffer> \oslash ⊘
+  inorea <buffer> (\X) ⊗
+  inorea <buffer> \otimes ⊗
+  inorea <buffer> \bigcirc ◯
+  inorea <buffer> \bullet ●
+  inorea <buffer> \div ÷
+  inorea <buffer> \o ∘
+  inorea <buffer> \circ ∘
+  inorea <buffer> \star ⋆
+  inorea <buffer> !! ‼
+  inorea <buffer> ?? ⁇
+  inorea <buffer> \sqcap ⊓
+  inorea <buffer> \sqcup ⊔
+  inorea <buffer> \uplus ⊎
+  inorea <buffer> \X ×
+  inorea <buffer> \times ×
+  inorea <buffer> \wr ≀
+  inorea <buffer> \cdot ⋅
+  inorea <buffer> ^+ ⁺
 endfunction
 
-au BufNewFile,BufRead *.tla call Tlaplus_unicode()
+autocmd FileType tla call Tlaplus_unicode()
