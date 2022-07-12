@@ -23,6 +23,7 @@ function! Tlaplus_unicode()
   inorea <buffer> >> ⟩
   inorea <buffer> >>_ ⟩_
   inorea <buffer> [] □
+  inorea <buffer> <> ⋄
   inorea <buffer> :: ∷
   inorea <buffer> ~ ¬
   inorea <buffer> \lnot ¬
