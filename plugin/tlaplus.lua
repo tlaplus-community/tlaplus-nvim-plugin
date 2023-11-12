@@ -1,22 +1,26 @@
--- Capture the plugin script directory for use later
+-- Load CSV file from script directory
 local tlaplus_plugin_path = vim.fn.expand('<sfile>:p:h')
+local csv = vim.fn.readfile(tlaplus_plugin_path .. '/tla-unicode.csv')
 
+-- Discard table header
+table.remove(csv, 1)
+
+-- Build up mappings for later use
+local mappings = {}
+for _, line in ipairs(csv) do
+  local name, ascii, unicode, _ = unpack(vim.split(line, ','))
+  local ascii_variants = vim.split(ascii, ';')
+  local description = 'TLA⁺ ' .. name
+  for _, ascii_variant in ipairs(ascii_variants) do
+    table.insert(mappings, { description, ascii_variant, unicode })
+  end
+end
+
+-- Define buffer-local keymaps from mappings computed above
 function AddTlaPlusUnicodeMappings()
-  -- Read TLA⁺ unicode CSV file
-  local csv = vim.fn.readfile(tlaplus_plugin_path .. '/tla-unicode.csv')
-
-  -- Discard table header
-  table.remove(csv, 1)
-
-  -- Iterate over unicode mapping table and construct keymaps
-  for _, line in ipairs(csv) do
-    local name, ascii, unicode, _ = unpack(vim.split(line, ','))
-    local ascii_variants = vim.split(ascii, ';')
-    for _, ascii_variant in ipairs(ascii_variants) do
-      local description = 'TLA⁺ ' .. name
-      -- Define keymap local to the buffer
-      vim.keymap.set('i', ascii_variant, unicode, { desc = description, buffer = true })
-    end
+  for _, mapping in ipairs(mappings) do
+    local description, ascii, unicode = unpack(mapping)
+    vim.keymap.set('i', ascii, unicode, { desc = description, buffer = true })
   end
 end
 
