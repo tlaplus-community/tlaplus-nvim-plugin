@@ -32,7 +32,6 @@ function AddTlaPlusUnicodeMappings()
     end
   else
     -- Use new neovim keymap API
-    print('setting keymaps')
     for _, mapping in ipairs(mappings) do
       local description, ascii, unicode = unpack(mapping)
       vim.keymap.set('i', ascii, unicode, { desc = description, buffer = true })
