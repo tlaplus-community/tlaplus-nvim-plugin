@@ -1,6 +1,9 @@
 # Overview
 This is a TLA⁺ plugin for Neovim that translates ASCII TLA⁺ symbols into Unicode as you type.
 It translates `\leq` into `≤`, `<=>` into `⇔`, `\A` into `∀`, and so on.
+Watch [the asciinema demo](https://asciinema.org/a/620647)!
+
+![](demo.gif)
 
 Upon opening a `.tla` file in nvim, around 80 different [key mappings](https://neovim.io/doc/user/lua.html#vim.keymap) will be defined for the buffer.
 These mappings make it so whenever you type an ASCII TLA+ symbol, the ASCII will be replaced by its Unicode counterpart.
