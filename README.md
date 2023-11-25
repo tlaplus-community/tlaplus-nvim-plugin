@@ -20,17 +20,24 @@ Plug 'tlaplus-community/tlaplus-nvim-plugin'
 ```
 Since this plugin is just a single Lua file it can likely be installed similarly easily by any other nvim package manager.
 
-## Configuration
-This plugin exposes a single configuration variable, `tlaplus_use_abbrev`.
-Setting this variable makes the plugin use the older vim [abbreviations API](https://neovim.io/doc/user/map.html#abbreviation) instead of the newer neovim keymap API.
-This provides a somewhat different editing experience - try both and see which one you like!
+## Configuration & Commands
 
-Set the variable in your `init.vim`:
+To define mappings automatically whenever you open a `.tla` file, set the global `tlaplus_mappings_enable` variable in your `init.vim`:
 ```vim
-let g:tlaplus_use_abbrev = 1
+let g:tlaplus_mappings_enable = 1
 ```
 or your `init.lua`:
 ```lua
-vim.g.tlaplus_use_abbrev = 1
+vim.g.tlaplus_mappings_enabled = true
 ```
+You can remove the mappings from a buffer with the `TlaMappingsRemove` command.
+Alternatively, if you keep the `tlaplus_mappings_enabled` variable undefined or `false`, you can selectively add the mappings to a buffer with the `TlaMappingsAdd` command.
+
+For convenience you can also enable or disable the plugin for the duration of your editing session with the `TlaMappingsEnable` and `TlaMappingsDisable` commands respectively.
+Note that these commands will not add nor remove mappings from any open buffers, and only affect the auto-loading functionality when a `.tla` file is opened.
+To add or remove mappings from open buffers use the `TlaMappingsAdd` and `TlaMappingsRemove` commands as described above.
+
+This plugin also exposes the global configuration variable `tlaplus_mappings_use_abbrev`.
+Setting this variable makes the plugin use the older vim [abbreviations API](https://neovim.io/doc/user/map.html#abbreviation) instead of the newer neovim keymap API.
+This provides a somewhat different editing experience - try both and see which one you like!
 
