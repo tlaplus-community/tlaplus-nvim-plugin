@@ -14,6 +14,7 @@ It pairs very nicely with this plugin; to get it, first install & configure [nvi
 Unfortunately SANY and TLC do not currently support Unicode symbols, so if you want to fully parse or model-check your spec you'll need to translate it back to ASCII with the [TLAUC](https://github.com/tlaplus-community/tlauc) command-line tool.
 
 ## Installation
+
 This plugin can be installed with [vim-plug](https://github.com/junegunn/vim-plug) by putting the following in your `init.vim` file between `plug#begin` and `plug#end`, then running `:PlugInstall`:
 ```vim
 Plug 'tlaplus-community/tlaplus-nvim-plugin'
@@ -40,4 +41,10 @@ To add or remove mappings from open buffers use the `TlaMappingsAdd` and `TlaMap
 This plugin also exposes the global configuration variable `tlaplus_mappings_use_abbrev`.
 Setting this variable makes the plugin use the older vim [abbreviations API](https://neovim.io/doc/user/map.html#abbreviation) instead of the newer neovim keymap API.
 This provides a somewhat different editing experience - try both and see which one you like!
+
+## Other Plugins
+
+This is not the only Vim/Neovim TLA⁺ plugin:
+- [florentc/vim-tla](https://github.com/florentc/vim-tla) uses text concealing for Unicode symbols instead of changing the actual text
+- [susliko/tla.nvim](https://github.com/susliko/tla.nvim) interfaces with the Java TLA⁺ tools
 
