@@ -42,9 +42,8 @@ This plugin also exposes the global configuration variable `tlaplus_mappings_use
 Setting this variable makes the plugin use the older vim [abbreviations API](https://neovim.io/doc/user/map.html#abbreviation) instead of the newer neovim keymap API.
 This provides a somewhat different editing experience - try both and see which one you like!
 
-## Other Plugins
+## Other TLA⁺ Plugins
 
-This is not the only Vim/Neovim TLA⁺ plugin:
-- [florentc/vim-tla](https://github.com/florentc/vim-tla) uses text concealing for Unicode symbols instead of changing the actual text
+- [florentc/vim-tla](https://github.com/florentc/vim-tla) uses text concealing instead of changing the actual text
 - [susliko/tla.nvim](https://github.com/susliko/tla.nvim) interfaces with the Java TLA⁺ tools
 
