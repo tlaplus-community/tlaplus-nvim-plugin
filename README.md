@@ -11,7 +11,7 @@ The Unicode mappings follow the standardization proposal laid out [here](https:/
 The [TLA+ tree-sitter grammar](https://github.com/tlaplus-community/tree-sitter-tlaplus/) is set up to highlight Unicode symbols identically to their ASCII counterparts.
 It pairs very nicely with this plugin; to get it, first install & configure [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) then run `:TSInstall tlaplus`.
 
-Unfortunately SANY and TLC do not currently support Unicode symbols, so if you want to fully parse or model-check your spec you'll need to translate it back to ASCII with the [TLAUC](https://github.com/tlaplus-community/tlauc) command-line tool.
+SANY and TLC now have built-in support for parsing Unicode symbols, but you can use [TLAUC](https://github.com/tlaplus-community/tlauc) to convert your spec back to ASCII if desired.
 
 ## Installation
 
