@@ -44,6 +44,7 @@ This provides a somewhat different editing experience - try both and see which o
 
 ## Other TLA⁺ Plugins
 
+- [bugarela/tla-input](https://github.com/bugarela/tla-input) performs similar translation for Emacs
 - [florentc/vim-tla](https://github.com/florentc/vim-tla) uses text concealing instead of changing the actual text
 - [susliko/tla.nvim](https://github.com/susliko/tla.nvim) interfaces with the Java TLA⁺ tools
 
