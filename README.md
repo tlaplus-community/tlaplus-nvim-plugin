@@ -29,7 +29,7 @@ let g:tlaplus_mappings_enable = 1
 ```
 or your `init.lua`:
 ```lua
-vim.g.tlaplus_mappings_enabled = true
+vim.g.tlaplus_mappings_enable = true
 ```
 You can remove the mappings from a buffer with the `TlaMappingsRemove` command.
 Alternatively, if you keep the `tlaplus_mappings_enabled` variable undefined or `false`, you can selectively add the mappings to a buffer with the `TlaMappingsAdd` command.
