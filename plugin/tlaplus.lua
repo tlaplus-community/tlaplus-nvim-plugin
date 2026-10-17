@@ -135,6 +135,7 @@ end
 
 -- Register callback to define mappings when a .tla file is opened
 vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+    group = vim.api.nvim_create_augroup('TlaPlusUnicodeMappings', { clear = true }),
     pattern = {'*.tla'},
     callback = AutoAddTlaPlusUnicodeMappings
   }
